@@ -12,3 +12,8 @@ This application is running within a Docker network. To re-implement it, please 
 You can visualize the execution from the following video:
 
 🎥 [Watch Video](https://drive.google.com/file/d/1LKc9k1nOu7oxK7Kgg8JLMzdktJvJDAE1/view?usp=sharing)
+ The final rendering will be as follows:
+ ![image](https://github.com/user-attachments/assets/890a68d8-1193-4fd6-b648-5cecfac04e1d)
+
+
+Inspired from : https://github.com/ShathaCodes/BigDataPipeline
