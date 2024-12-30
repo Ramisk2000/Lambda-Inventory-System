@@ -1,0 +1,9 @@
+tn/enit/tp4/util/PropertyFileReader.class
+tn/enit/tp4/processor/BatchProcessor.class
+tn/enit/tp4/util/SensorDataDeserializer.class
+tn/enit/tp4/entity/AverageData.class
+tn/enit/tp4/entity/Temperature.class
+tn/enit/tp4/entity/Humidity.class
+tn/enit/tp4/processor/ProcessorUtils.class
+tn/enit/tp4/processor/StreamProcessor.class
+tn/enit/tp4/entity/SensorData.class
