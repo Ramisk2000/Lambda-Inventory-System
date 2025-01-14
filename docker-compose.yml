@@ -5,7 +5,7 @@ networks:
     driver: bridge
     ipam:
       config:
-        - subnet: 172.23.0.0/24
+        - subnet: 172.23.4.0/24
 
 services:
 
@@ -48,7 +48,7 @@ services:
     hostname: cassandra
     networks:
       netw:
-        ipv4_address: 172.23.0.6
+        ipv4_address: 172.23.4.6
     ports:
       - "9042:9042"
     environment:
@@ -56,7 +56,7 @@ services:
       - "HEAP_NEWSIZE=128M"
     container_name: cassandra-iot
     volumes:
-      - ./data/schema.cql:/schema.cql
+      - ./schema.cql:/schema.cql
 
   spark-master:
     image: bde2020/spark-master:3.0.0-hadoop3.2-java11
@@ -65,6 +65,7 @@ services:
     healthcheck:
       interval: 5s
       retries: 100
+      test: ["CMD", "curl", "-f", "http://localhost:8080"]
     ports:
       - "8080:8080"
       - "7077:7077"
@@ -104,6 +105,7 @@ services:
     healthcheck:
       interval: 5s
       retries: 100
+
     networks:
       - netw
     ports:

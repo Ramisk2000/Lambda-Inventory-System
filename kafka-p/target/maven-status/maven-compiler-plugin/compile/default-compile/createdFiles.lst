@@ -1,5 +1,5 @@
-org/example/Main.class
-tn/enit/tp4/kafka/PropertyFileReader.class
-tn/enit/tp4/kafka/SensorDataProducer.class
-tn/enit/tp4/kafka/SensorData.class
-tn/enit/tp4/kafka/SensorDataEncoder.class
+tn\enit\tp4\kafka\InventoryData.class
+tn\enit\tp4\kafka\PropertyFileReader.class
+org\example\Main.class
+tn\enit\tp4\kafka\InventoryProducer.class
+tn\enit\tp4\kafka\InventoryDataEncoder.class

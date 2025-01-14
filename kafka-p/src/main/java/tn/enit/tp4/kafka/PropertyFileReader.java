@@ -5,20 +5,14 @@ import java.io.InputStream;
 import java.util.Properties;
 
 public class PropertyFileReader {
-    private static Properties prop = new Properties();
-    public static Properties readPropertyFile() throws Exception {
-        if (prop.isEmpty()) {
-            InputStream input = PropertyFileReader.class.getClassLoader().getResourceAsStream("kafka-producer.properties");
-            try {
-                prop.load(input);
-            } catch (IOException ex) {
-                System.out.println(ex.toString());
-                throw ex;
-            } finally {
-                if (input != null) {
-                    input.close();
-                }
+
+    public static Properties readPropertyFile(String fileName) throws Exception {
+        Properties prop = new Properties();
+        try (InputStream input = PropertyFileReader.class.getClassLoader().getResourceAsStream(fileName)) {
+            if (input == null) {
+                throw new IOException("Unable to find " + fileName);
             }
+            prop.load(input);
         }
         return prop;
     }

@@ -32,12 +32,23 @@
             <configuration>
               <transformers>
                 <transformer>
-                  <mainClass>tn.enit.tp4.kafka.SensorDataProducer</mainClass>
+                  <mainClass>tn.enit.tp4.kafka.InventoryProducer</mainClass>
                 </transformer>
               </transformers>
             </configuration>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.2.0</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>tn.enit.tp4.kafka.InventoryProducer</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
       </plugin>
     </plugins>
   </build>

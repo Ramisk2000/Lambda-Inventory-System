@@ -1,9 +1,6 @@
-/home/bigdata/IdeaProjects/spark-p/src/main/java/tn/enit/tp4/util/PropertyFileReader.java
-/home/bigdata/IdeaProjects/spark-p/src/main/java/tn/enit/tp4/util/SensorDataDeserializer.java
-/home/bigdata/IdeaProjects/spark-p/src/main/java/tn/enit/tp4/entity/Humidity.java
-/home/bigdata/IdeaProjects/spark-p/src/main/java/tn/enit/tp4/entity/SensorData.java
-/home/bigdata/IdeaProjects/spark-p/src/main/java/tn/enit/tp4/entity/Temperature.java
-/home/bigdata/IdeaProjects/spark-p/src/main/java/tn/enit/tp4/processor/ProcessorUtils.java
-/home/bigdata/IdeaProjects/spark-p/src/main/java/tn/enit/tp4/processor/StreamProcessor.java
-/home/bigdata/IdeaProjects/spark-p/src/main/java/tn/enit/tp4/entity/AverageData.java
-/home/bigdata/IdeaProjects/spark-p/src/main/java/tn/enit/tp4/processor/BatchProcessor.java
+C:\Users\msi\TP5_lambda_architecture\spark-p\src\main\java\tn\enit\tp4\processor\ProcessorUtils.java
+C:\Users\msi\TP5_lambda_architecture\spark-p\src\main\java\tn\enit\tp4\processor\BatchProcessor.java
+C:\Users\msi\TP5_lambda_architecture\spark-p\src\main\java\tn\enit\tp4\processor\StreamProcessor.java
+C:\Users\msi\TP5_lambda_architecture\spark-p\src\main\java\tn\enit\tp4\entity\InventoryData.java
+C:\Users\msi\TP5_lambda_architecture\spark-p\src\main\java\tn\enit\tp4\util\PropertyFileReader.java
+C:\Users\msi\TP5_lambda_architecture\spark-p\src\main\java\tn\enit\tp4\util\InventoryDataDeserializer.java

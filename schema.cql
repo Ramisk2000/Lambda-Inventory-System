@@ -1,10 +1,24 @@
-//Create keyspace
-CREATE KEYSPACE IF NOT EXISTS sensordatakeyspace WITH replication = {'class':'SimpleStrategy', 'replication_factor':1};
-
-//Create table
-CREATE TABLE sensordatakeyspace.temperature (id text , timeStamp timestamp, value double, PRIMARY KEY (id));
-
-CREATE TABLE sensordatakeyspace.humidity (id text , timeStamp timestamp, value double, PRIMARY KEY (id));
-
-CREATE TABLE sensordatakeyspace.averagedata (id text , temperature double, humidity double, PRIMARY KEY (id));
-
+CREATE KEYSPACE IF NOT EXISTS ecommerce WITH replication = {'class':'SimpleStrategy', 'replication_factor':1};
+CREATE TABLE ecommerce.low_stock (
+                                     sku_code text,
+                                     design_no text,
+                                     stock int,
+                                     category text,
+                                     size text,
+                                     color text,
+                                     PRIMARY KEY (sku_code)
+);
+CREATE TABLE ecommerce.inventory_data (
+                                          sku_code text,
+                                          design_no text,
+                                          stock int,
+                                          category text,
+                                          size text,
+                                          color text,
+                                          PRIMARY KEY (sku_code)
+);
+CREATE TABLE ecommerce.category_stock (
+                                          category text,
+                                          total_stock int,
+                                          PRIMARY KEY (category)
+);
